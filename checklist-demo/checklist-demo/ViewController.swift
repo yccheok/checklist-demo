@@ -21,9 +21,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var bottomLayoutConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initKeyboardNotifications()
+        
         initCollectionView()
         initDataSource()
         
@@ -153,6 +157,44 @@ class ViewController: UIViewController {
     
     func textViewDidChange(_ checklistCell: ChecklistCell) {
         self.collectionView.collectionViewLayout.invalidateLayout()
+    }
+}
+
+extension ViewController {
+    func deinitKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    //
+    // https://stackoverflow.com/a/41808338/72437
+    //
+    func initKeyboardNotifications() {
+        // If your app targets iOS 9.0 and later or macOS 10.11 and later, you do not need to unregister an observer
+        // that you created with this function.
+        
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+    }
+    
+    @objc private func keyboardWillShow(sender: NSNotification) {
+        let i = sender.userInfo!
+        let s: TimeInterval = (i[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let k = (i[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+        bottomLayoutConstraint.constant = -k
+        UIView.animate(withDuration: s) { self.view.layoutIfNeeded() }
+    }
+    
+    @objc private func keyboardWillHide(sender: NSNotification) {
+        let info = sender.userInfo!
+        let s: TimeInterval = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        bottomLayoutConstraint.constant = 0
+        UIView.animate(withDuration: s) { self.view.layoutIfNeeded() }
     }
 }
 

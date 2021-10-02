@@ -18,7 +18,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zyP-PP-3R4">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kz8-9J-GJX">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -32,12 +32,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zyP-PP-3R4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AD1-T7-ZTr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zyP-PP-3R4" secondAttribute="bottom" id="CxG-4l-IHX"/>
+                            <constraint firstItem="zyP-PP-3R4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CxG-4l-IHX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zyP-PP-3R4" secondAttribute="trailing" id="WIj-6o-toV"/>
                             <constraint firstItem="zyP-PP-3R4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fR2-UV-Ucb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomLayoutConstraint" destination="CxG-4l-IHX" id="Uxy-dr-V4u"/>
                         <outlet property="collectionView" destination="zyP-PP-3R4" id="1cu-98-hl8"/>
                     </connections>
                 </viewController>
@@ -49,6 +50,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
