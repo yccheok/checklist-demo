@@ -28,7 +28,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpp-4g-b3j" customClass="CheckedUIButton" customModule="checklist_demo" customModuleProvider="target">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpp-4g-b3j">
                         <rect key="frame" x="0.0" y="44" width="48" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="Ixx-vD-9FY"/>

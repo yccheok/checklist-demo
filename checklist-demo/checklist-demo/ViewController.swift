@@ -152,11 +152,24 @@ class ViewController: UIViewController {
     }
     
     func checklistFooterClicked() {
-        print("footer clicked")
+        addChecklist(text: nil, checked: false)
+        
+        applySnapshot(true)
     }
     
     func textViewDidChange(_ checklistCell: ChecklistCell) {
+        //
+        // Critical code to ensure cell will resize based on cell content.
+        //
         self.collectionView.collectionViewLayout.invalidateLayout()
+        
+        //
+        // Ensure our checklists data structure in sync with UI state.
+        //
+        guard let indexPath = collectionView.indexPath(for: checklistCell) else { return }
+        let item = indexPath.item
+        let text = checklistCell.textView.text
+        self.checklists[item].text = text
     }
 }
 
