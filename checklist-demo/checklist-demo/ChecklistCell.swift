@@ -9,9 +9,26 @@ import UIKit
 
 class ChecklistCell: UICollectionViewCell {
 
+    @IBOutlet weak var textView: UITextView!
+    
+    weak var delegate: ViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        // Remove all padding for UITextView.
+        // https://stackoverflow.com/questions/15823991/ios-remove-all-padding-from-uitextview
+        textView.textContainer.lineFragmentPadding = 0
+        textView.delegate = self
     }
 
+    func update(_ checklist: Checklist) {
+        textView.text = checklist.text
+    }
+}
+
+extension ChecklistCell: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        delegate?.textViewDidChange(self)
+    }
 }

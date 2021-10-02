@@ -19,6 +19,7 @@
 		0D18CE6127083DB1006D82B3 /* ChecklistFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE5F27083DB1006D82B3 /* ChecklistFooter.xib */; };
 		0D18CE6227083DB1006D82B3 /* ChecklistFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE6027083DB1006D82B3 /* ChecklistFooter.swift */; };
 		0D18CE6427083E63006D82B3 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE6327083E63006D82B3 /* Checklist.swift */; };
+		0D18CE6627083F78006D82B3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE6527083F78006D82B3 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0D18CE5F27083DB1006D82B3 /* ChecklistFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistFooter.xib; sourceTree = "<group>"; };
 		0D18CE6027083DB1006D82B3 /* ChecklistFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistFooter.swift; sourceTree = "<group>"; };
 		0D18CE6327083E63006D82B3 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		0D18CE6527083F78006D82B3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				0D18CE5A27083B81006D82B3 /* ChecklistCell.xib */,
 				0D18CE5D27083BA1006D82B3 /* CheckedUIButton.swift */,
 				0D18CE6327083E63006D82B3 /* Checklist.swift */,
+				0D18CE6527083F78006D82B3 /* UIView+Extensions.swift */,
 			);
 			path = "checklist-demo";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				0D18CE6227083DB1006D82B3 /* ChecklistFooter.swift in Sources */,
 				0D18CE5E27083BA1006D82B3 /* CheckedUIButton.swift in Sources */,
 				0D18CE4827083ACD006D82B3 /* SceneDelegate.swift in Sources */,
+				0D18CE6627083F78006D82B3 /* UIView+Extensions.swift in Sources */,
 				0D18CE6427083E63006D82B3 /* Checklist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
