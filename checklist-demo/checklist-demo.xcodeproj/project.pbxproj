@@ -16,6 +16,8 @@
 		0D18CE5B27083B81006D82B3 /* ChecklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE5927083B81006D82B3 /* ChecklistCell.swift */; };
 		0D18CE5C27083B81006D82B3 /* ChecklistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE5A27083B81006D82B3 /* ChecklistCell.xib */; };
 		0D18CE5E27083BA1006D82B3 /* CheckedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE5D27083BA1006D82B3 /* CheckedUIButton.swift */; };
+		0D18CE6127083DB1006D82B3 /* ChecklistFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE5F27083DB1006D82B3 /* ChecklistFooter.xib */; };
+		0D18CE6227083DB1006D82B3 /* ChecklistFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE6027083DB1006D82B3 /* ChecklistFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0D18CE5927083B81006D82B3 /* ChecklistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistCell.swift; sourceTree = "<group>"; };
 		0D18CE5A27083B81006D82B3 /* ChecklistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistCell.xib; sourceTree = "<group>"; };
 		0D18CE5D27083BA1006D82B3 /* CheckedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedUIButton.swift; sourceTree = "<group>"; };
+		0D18CE5F27083DB1006D82B3 /* ChecklistFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistFooter.xib; sourceTree = "<group>"; };
+		0D18CE6027083DB1006D82B3 /* ChecklistFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistFooter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		0D18CE4427083ACD006D82B3 /* checklist-demo */ = {
 			isa = PBXGroup;
 			children = (
+				0D18CE6027083DB1006D82B3 /* ChecklistFooter.swift */,
+				0D18CE5F27083DB1006D82B3 /* ChecklistFooter.xib */,
 				0D18CE4527083ACD006D82B3 /* AppDelegate.swift */,
 				0D18CE4727083ACD006D82B3 /* SceneDelegate.swift */,
 				0D18CE4927083ACD006D82B3 /* ViewController.swift */,
@@ -136,6 +142,7 @@
 				0D18CE5C27083B81006D82B3 /* ChecklistCell.xib in Resources */,
 				0D18CE5227083ACE006D82B3 /* LaunchScreen.storyboard in Resources */,
 				0D18CE4F27083ACE006D82B3 /* Assets.xcassets in Resources */,
+				0D18CE6127083DB1006D82B3 /* ChecklistFooter.xib in Resources */,
 				0D18CE4D27083ACD006D82B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +157,7 @@
 				0D18CE5B27083B81006D82B3 /* ChecklistCell.swift in Sources */,
 				0D18CE4A27083ACD006D82B3 /* ViewController.swift in Sources */,
 				0D18CE4627083ACD006D82B3 /* AppDelegate.swift in Sources */,
+				0D18CE6227083DB1006D82B3 /* ChecklistFooter.swift in Sources */,
 				0D18CE5E27083BA1006D82B3 /* CheckedUIButton.swift in Sources */,
 				0D18CE4827083ACD006D82B3 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ChecklistFooter" customModule="checklist_demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gx1-N1-7JM">
+                    <rect key="frame" x="48" y="44" width="272" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V66-Uz-xeh">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="ide-7o-3hQ"/>
+                            </constraints>
+                            <color key="tintColor" name="secondaryTextColor"/>
+                            <state key="normal" image="plus" catalog="system"/>
+                            <connections>
+                                <action selector="buttonClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="pO4-Te-CRc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-c0-AQa">
+                            <rect key="frame" x="48" y="0.0" width="224" height="56"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="cw1-JJ-Utq"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="top" secondItem="gx1-N1-7JM" secondAttribute="top" id="5ji-V7-sbv"/>
+                <constraint firstItem="gx1-N1-7JM" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" priority="999" id="6Lz-Kj-vCP"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="gx1-N1-7JM" secondAttribute="trailing" id="ldz-th-r1S"/>
+                <constraint firstItem="gx1-N1-7JM" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="48" id="sAH-4j-Mj1"/>
+            </constraints>
+            <connections>
+                <outlet property="heightConstraint" destination="cw1-JJ-Utq" id="UZ6-Ul-yxE"/>
+                <outlet property="stackView" destination="gx1-N1-7JM" id="YPC-CY-9Qt"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="89.397321428571431"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="secondaryTextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.54100000858306885" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
