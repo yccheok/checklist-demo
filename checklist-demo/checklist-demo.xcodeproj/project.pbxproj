@@ -13,6 +13,9 @@
 		0D18CE4D27083ACD006D82B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE4B27083ACD006D82B3 /* Main.storyboard */; };
 		0D18CE4F27083ACE006D82B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE4E27083ACE006D82B3 /* Assets.xcassets */; };
 		0D18CE5227083ACE006D82B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE5027083ACE006D82B3 /* LaunchScreen.storyboard */; };
+		0D18CE5B27083B81006D82B3 /* ChecklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE5927083B81006D82B3 /* ChecklistCell.swift */; };
+		0D18CE5C27083B81006D82B3 /* ChecklistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D18CE5A27083B81006D82B3 /* ChecklistCell.xib */; };
+		0D18CE5E27083BA1006D82B3 /* CheckedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CE5D27083BA1006D82B3 /* CheckedUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0D18CE4E27083ACE006D82B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D18CE5127083ACE006D82B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D18CE5327083ACE006D82B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D18CE5927083B81006D82B3 /* ChecklistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistCell.swift; sourceTree = "<group>"; };
+		0D18CE5A27083B81006D82B3 /* ChecklistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistCell.xib; sourceTree = "<group>"; };
+		0D18CE5D27083BA1006D82B3 /* CheckedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				0D18CE4E27083ACE006D82B3 /* Assets.xcassets */,
 				0D18CE5027083ACE006D82B3 /* LaunchScreen.storyboard */,
 				0D18CE5327083ACE006D82B3 /* Info.plist */,
+				0D18CE5927083B81006D82B3 /* ChecklistCell.swift */,
+				0D18CE5A27083B81006D82B3 /* ChecklistCell.xib */,
+				0D18CE5D27083BA1006D82B3 /* CheckedUIButton.swift */,
 			);
 			path = "checklist-demo";
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D18CE5C27083B81006D82B3 /* ChecklistCell.xib in Resources */,
 				0D18CE5227083ACE006D82B3 /* LaunchScreen.storyboard in Resources */,
 				0D18CE4F27083ACE006D82B3 /* Assets.xcassets in Resources */,
 				0D18CE4D27083ACD006D82B3 /* Main.storyboard in Resources */,
@@ -137,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D18CE5B27083B81006D82B3 /* ChecklistCell.swift in Sources */,
 				0D18CE4A27083ACD006D82B3 /* ViewController.swift in Sources */,
 				0D18CE4627083ACD006D82B3 /* AppDelegate.swift in Sources */,
+				0D18CE5E27083BA1006D82B3 /* CheckedUIButton.swift in Sources */,
 				0D18CE4827083ACD006D82B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
